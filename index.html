@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThreadTrade | Buy & Sell Clothes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1 class="logo">ThreadTrade</h1>
+        <div class="nav-links">
+          <a href="#shop">Shop</a>
+          <a href="#sell">Sell</a>
+          <a href="#how">How It Works</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <h2>Buy and Sell Clothes in Minutes</h2>
+        <p>
+          Discover pre-loved fashion or list your own pieces quickly with secure
+          checkout and easy shipping.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#shop">Start Shopping</a>
+          <a class="btn btn-secondary" href="#sell">List an Item</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="shop" class="section">
+        <h3>Trending Items</h3>
+        <div id="items" class="cards"></div>
+      </section>
+
+      <section id="sell" class="section split">
+        <div>
+          <h3>Sell Your Clothes</h3>
+          <p>
+            Fill out the details below to mock-list your item and see an instant
+            summary.
+          </p>
+          <form id="sell-form" class="sell-form">
+            <label>
+              Item Name
+              <input type="text" id="itemName" placeholder="e.g. Vintage Denim Jacket" required />
+            </label>
+            <label>
+              Category
+              <select id="category" required>
+                <option value="">Choose one</option>
+                <option>Tops</option>
+                <option>Bottoms</option>
+                <option>Outerwear</option>
+                <option>Dresses</option>
+                <option>Shoes</option>
+                <option>Accessories</option>
+              </select>
+            </label>
+            <label>
+              Price ($)
+              <input type="number" id="price" min="1" placeholder="45" required />
+            </label>
+            <label>
+              Condition
+              <select id="condition" required>
+                <option value="">Choose one</option>
+                <option>New with tags</option>
+                <option>Like new</option>
+                <option>Good</option>
+                <option>Fair</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary">Create Listing</button>
+          </form>
+        </div>
+        <aside class="listing-preview" id="listing-preview">
+          <h4>Listing Preview</h4>
+          <p>Your item details will appear here after submitting.</p>
+        </aside>
+      </section>
+
+      <section id="how" class="section">
+        <h3>How It Works</h3>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h4>Browse</h4>
+            <p>Explore curated clothing listings from trusted sellers.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h4>Buy Securely</h4>
+            <p>Checkout safely with built-in buyer protection.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h4>Sell Fast</h4>
+            <p>Post listings with photos, price, and condition in minutes.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ThreadTrade — Sustainable fashion marketplace</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
